@@ -9,11 +9,11 @@ fi
 
 username=$1
 # check if username exists
+egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
   echo "$username exists"
   exit 1
 fi
-egrep "^$username" /etc/passwd >/dev/null
 
 # check if there is a 2nd argument for a pass, enter otherwise
 if [ -z ${2} ]; then
