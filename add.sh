@@ -18,6 +18,8 @@ fi
 # check if there is a 2nd argument for a pass, enter otherwise
 if [ -z ${2} ]; then
   read -s -p "Enter password : " password
+else
+  password=$2
 fi
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 useradd -m -p $pass $username
