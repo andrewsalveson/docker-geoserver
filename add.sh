@@ -8,15 +8,17 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 username=$1
-read -s -p "Enter password : " password
-egrep "^$username" /etc/passwd >/dev/null
-
 # check if username exists
 if [ $? -eq 0 ]; then
   echo "$username exists"
   exit 1
 fi
+egrep "^$username" /etc/passwd >/dev/null
 
+# check if there is a 2nd argument for a pass, enter otherwise
+if [ -z ${2} ]; then
+  read -s -p "Enter password : " password
+fi
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 useradd -m -p $pass $username
 
