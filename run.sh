@@ -4,7 +4,7 @@ docker rm geoserver
 docker kill geoserver-postgis
 docker rm geoserver-postgis
 
-DATA_DIR=~/geoserver_data
+DATA_DIR=/var/geoserver
 if [ ! -d $DATA_DIR ]
 then
     mkdir -p $DATA_DIR
@@ -16,6 +16,6 @@ docker run \
 	--name=geoserver \
 	--link geoserver-postgis:postgis \
         -v $DATA_DIR:/opt/geoserver/data_dir \
-	-p 8080:8080 \
+	-p $1:8080 \
 	-d \
 	-t kartoza/geoserver
