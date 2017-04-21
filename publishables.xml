@@ -1,0 +1,6 @@
+<publishables>
+  <published type="layer">
+    <name>BOUNDS</name>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8081/geoserver/rest/layers/BOUNDS.xml" type="application/xml"/>
+  </published>
+</publishables>

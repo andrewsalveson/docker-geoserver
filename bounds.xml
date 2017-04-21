@@ -1,0 +1,13 @@
+<bounds>
+  <minx>-74.40908475697732</minx>
+  <maxx>-73.46454952665168</maxx>
+  <miny>40.33410085330135</miny>
+  <maxy>41.06163634396583</maxy>
+  <crs>GEOGCS[&quot;GCS_WGS_1984&quot;, 
+  DATUM[&quot;D_WGS_1984&quot;, 
+    SPHEROID[&quot;WGS_1984&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Longitude&quot;, EAST], 
+  AXIS[&quot;Latitude&quot;, NORTH]]</crs>
+</bounds>

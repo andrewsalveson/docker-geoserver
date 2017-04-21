@@ -1,0 +1,32 @@
+<layerGroup>
+  <name>TestUser</name>
+  <mode>SINGLE</mode>
+  <workspace>
+    <name>public</name>
+  </workspace>
+  <publishables>
+    <published type="layer">
+      <name>BOUNDS</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8081/geoserver/rest/layers/BOUNDS.xml" type="application/xml"/>
+    </published>
+  </publishables>
+  <styles>
+    <style>
+      <name>polygon</name>
+      <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8081/geoserver/rest/styles/polygon.xml" type="application/xml"/>
+    </style>
+  </styles>
+  <bounds>
+    <minx>-74.40908475697732</minx>
+    <maxx>-73.46454952665168</maxx>
+    <miny>40.33410085330135</miny>
+    <maxy>41.06163634396583</maxy>
+    <crs>GEOGCS[&quot;GCS_WGS_1984&quot;, 
+  DATUM[&quot;D_WGS_1984&quot;, 
+    SPHEROID[&quot;WGS_1984&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Longitude&quot;, EAST], 
+  AXIS[&quot;Latitude&quot;, NORTH]]</crs>
+  </bounds>
+</layerGroup>

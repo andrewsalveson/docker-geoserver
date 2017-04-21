@@ -38,4 +38,5 @@ mkdir -p $homeupload
 mount --bind $uploaddir $homeupload
 chown $username:$username $uploaddir
 chown $username:$username $homeupload
+./comm.sh add user $username
 [ $? -eq 0 ] && echo "User has been added to system!" || echo "Failed to add a user!"

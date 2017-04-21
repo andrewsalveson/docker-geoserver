@@ -1,0 +1,6 @@
+<styles>
+  <style>
+    <name>public:outline</name>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="alternate" href="http://localhost:8081/geoserver/rest/workspaces/public/styles/outline.xml" type="application/xml"/>
+  </style>
+</styles>
